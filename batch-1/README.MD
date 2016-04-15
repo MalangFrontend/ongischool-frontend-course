@@ -1,6 +1,6 @@
 # Ongis School Frontend Batch 1 - Pengenalan Frontend Development
 
-Batch 1 [Ongis School](http://ongis.school) bekerjasama dengan Frontend Developer Malang User Group. Slide dapat dilihat di [sini](http://malangfrontend.github.io/ongischool-frontend-course/batch-1/course-1)
+Batch 1 [Ongis School](http://ongis.school) bekerjasama dengan Frontend Developer Malang User Group. Slide dapat dilihat di [sini](http://malangfrontend.github.io/ongischool-frontend-course/batch-1)
 
 ## Course Outline
 
