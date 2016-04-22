@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>HTML Dasar</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta property="og:description" content="Ongis School Batch 1 Frontend Course - Course 1 - Pengenalan Frontend Development">
+    <meta property="og:image" content="http://malangfrontend.github.io/ongischool-frontend-course/batch-1/course-1/img/presentation-cover.png">
+  </head>
+  <body>
+    <textarea id="source">name: page-cover
+class: center, middle, cover
+
+.hd[
+    ![ongischool](img/ongischool-logo-wide-wc.png)
+]
+
+.ft[
+    ![frontendmalang](img/fdm-logo-wide-wc.png)
+    ![dilo](img/dilo-logo-default.png)
+]
+
+Ongis School Batch 1 Course 2 (FDMOS0102)
+
+# Basic HTML
+
+Malang Digital Lounge, 22 April 2016
+
+---
+
+name: page-template
+class: page, as-template
+
+.page-header[
+.left[
+    Ongis School Batch #1 - Course #02 : Basic HTML
+]
+.right[
+    FDM-OS-01-02
+].clearfix[]]
+
+.page-footer[
+.left[
+    ONGIS SCHOOL 2016
+]
+.right[
+    ![ongischool](img/ongischool-logo-wide-bc.png)
+    ![frontendmalang](img/fdm-logo-wide-bc.png)
+    ![dilo](img/dilo-logo-default.png)
+].clearfix[]]
+
+
+---
+
+class: page
+template: page-template
+
+# Agenda
+
+--
+
+1. Sejarah
+--
+
+2. Apa itu HTML
+--
+
+3. Bagaimana Web Bekerja
+--
+
+4. Elemen
+--
+
+5. HTML 4 vs HTML 5
+--
+
+6. Workshop
+--
+
+7. Tugas  
+
+---
+
+class: section-cover, middle, center, bg-orange
+
+# Sejarah HTML
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Initial release 
+# 1993
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## November 24, 1995
+# HTML 2.0
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## January 14, 1997
+# HTML 3.2
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## December 18, 1997 & April 24, 1998
+# HTML 4.0
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## December 24, 1999 & May 2000
+# HTML 4.01
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## October 28, 2014
+# HTML 5
+
+---
+
+
+
+
+
+
+
+
+
+
+class: section-cover, middle, center, bg-orange
+
+# Pengertian dan Deskripsi HTML
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Kepanjangan HTML
+# __H__yper __T__ext __M__arkup __L__anguage
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## HTML Adalah 
+# Bahasa markup yang digunakan untuk menyusun dan membuat sebuah tampilan halaman web
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Apa itu halaman web?
+# file teks berisi _script_ HTML
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+# Format HTML pada halaman web sedikit banyak bisa dianalogikan dengan _formatting_ pada Microsoft Word
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## HTML itu 
+# Statis
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## HTML itu 
+# tidak _case sensitive_
+
+---
+
+class: section-cover, middle, center, bg-purple
+
+# Apakah HTML itu termasuk bahasa pemrograman?
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# Sama Sekali Bukan
+
+---
+
+class: section-cover, middle, center, bg-dark-green
+
+## HTML itu 
+# Merupakan bahasa _formatting_ atau _markup_
+
+---
+
+class: section-cover, middle, center, bg-purple
+
+# Mengapa HTML bukan merupakan bahasa pemrograman?
+
+---
+
+class: section-cover, middle, center, bg-dark-green
+
+# Karena HTML bersifat statis dan tidak bisa digunakan untuk mewujudkan sebuah logika pemrograman
+
+---
+
+
+
+
+
+
+
+
+
+
+
+class: section-cover, middle, center, bg-dark-orange
+
+# Lalu Bagaimana Web Bekerja?
+
+---
+
+class: section-cover, middle, center, bg-white
+
+.center.middle[
+    ![fdm](img/how-web-works.png)
+]
+
+---
+
+
+
+
+
+
+
+
+class: section-cover, middle, center, bg-dark-orange
+
+# Struktur Dasar HTML
+
+---
+
+class: section-cover, middle, bg-dark-orange, code
+
+# `<element attribute="value">` 
+#       `Content` 
+# `</element>`
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+# Setiap element HTML selalu diawali `<element>` dan diakhiri/ditutup dengan `</element>`
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+# Setiap element HTML bisa berisi `attribute` sejumlah 1 atau lebih
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+# Setiap attribute pada elemen HTML bisa berisi `value` atau tidak
+
+---
+
+class: section-cover, middle, bg-dark
+--
+# `<element/>`
+--
+
+## `<element> Content </element>`
+--
+
+## `<element attribute>` (!)
+--
+
+## `<element attribute="value">`
+--
+
+## `<element attribute="value1 value2">`
+--
+
+### `<element attribute1="value1" attribute2="value2">`
+
+---
+
+
+
+
+
+
+
+
+
+
+
+class: section-cover, middle, center, bg-dark-orange
+
+# Elemen pada HTML (HTML 4.0)
+
+---
+
+class: section-cover, middle, center, bg-dark-orange
+
+# DOCTYPE
+# `<head>`
+# `<body>`
+# Commenting
+
+---
+
+class: section-cover, middle, center, bg-blue
+
+# DOCTYPE
+
+---
+
+class: section-cover, middle, center, bg-blue
+
+# DOCTYPE adalah deklarasi awal yang digunakan untuk mengidentifikasi jenis dokumen HTML yang digunakan sehingga browser dapat menentukan bagaimana memperlakukan kode HTML tersebut
+
+---
+
+class: section-cover, middle, center, bg-blue
+
+# HTML 4.01 Strict 
+### `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">`
+---
+
+class: section-cover, middle, center, bg-blue
+
+# HTML 4.01 Transitional
+### `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">`
+---
+
+class: section-cover, middle, center, bg-blue
+
+# HTML 4.01 Frameset 
+### `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">`
+---
+
+class: section-cover, middle, center, bg-blue
+
+# XHTML 1.0 Strict
+### `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">`
+---
+
+class: section-cover, middle, center, bg-blue
+
+# XHTML 1.0 Transitional
+### `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">`
+---
+
+class: section-cover, middle, center, bg-blue
+
+# XHTML 1.0 Frameset
+### `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">`
+---
+
+class: section-cover, middle, center, bg-blue
+
+# XHTML 1.1
+### `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">`
+---
+
+class: section-cover, middle, center, bg-dark-blue
+
+# HTML5
+# `<!DOCTYPE HTML>`
+---
+
+
+
+class: section-cover, middle, center, bg-red
+
+# `<head>`
+
+---
+
+class: section-cover, middle, center, bg-red
+
+## `<head>` adalah tag element HTML yang digunakan untuk meletakkan sub element / sub tags seperti `<title>`, `<meta>`, `<script>` atau `<style>`
+
+---
+
+class: section-cover, middle, bg-red
+
+## Element yang ada di dalam `<head>` adalah:   
+--
+
+- # Elements
+--
+
+- # Meta
+--
+
+- # Link
+--
+
+- # Favicons
+--
+
+- # Social Meta
+--
+
+- # Browser / Platform
+
+---
+
+class: section-cover, middle, bg-dark-red
+
+# Elements
+```
+<title>Page Title</title>
+<base href="https://example.com/page.html">
+<style>
+  body { color: red; }
+</style>
+<script src="script.js"></script>
+```
+
+---
+
+class: section-cover, middle, bg-dark-red
+
+# Meta Element
+```
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="your,keywords,here">
+<meta name="description" content="150 chars">
+<meta name="subject" content="your website's subject">
+<meta name="language" content="en">
+<meta name="robots" content="index,follow">
+
+<!-- Cache Control -->
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+```
+
+---
+
+class: section-cover, middle, bg-dark-red
+
+# Link Element
+```
+<link rel="stylesheet" href="https://example.com/styles.css">
+```
+
+---
+
+class: section-cover, middle, bg-dark-red
+
+# Favicons Element
+```
+<link rel="icon" href="favicon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
+<link rel="icon" href="favicon-62.png" sizes="62x62" type="image/png">
+```
+
+---
+
+class: section-cover, middle, bg-dark-red
+
+# Social (Facebook)
+```
+<meta property="og:url" content="https://www.example.com/">
+<meta property="og:title" content="Content Title">
+<meta property="og:description" content="Description Here">
+<meta property="og:site_name" content="Site Name">
+<meta property="og:image" content="https://example.com/image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="fb:app_id" content="Facebook numeric ID">
+<meta property="fb:admins" content="Facebook numeric ID">
+```
+
+---
+
+class: section-cover, middle, bg-dark-red
+
+# Social (Twitter)
+```
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@publisher_handle">
+<meta name="twitter:creator" content="@author_handle">
+<meta name="twitter:title" content="Content Title">
+<meta name="twitter:description" content="Description Here">
+<meta name="twitter:image" content="https://example.com/image.jpg">
+```
+
+---
+
+class: section-cover, middle, bg-dark-red
+
+# Social (Google Schema)
+```
+<meta itemprop="name" content="Content Title">
+<meta itemprop="description" content="Description Here">
+<meta itemprop="image" content="https://example.com/image.jpg">
+```
+
+---
+
+class: section-cover, middle, bg-dark-red
+
+# Browser/Platform (Apple iOS)
+```
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-title" content="My App">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-touch-fullscreen" content="yes">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+```
+
+---
+
+
+
+
+class: section-cover, middle, center, bg-green
+
+# `<body>`
+
+---
+
+class: section-cover, middle, center, bg-green
+
+## `<body>` adalah tag element HTML yang digunakan untuk meletakkan sub element / sub tags yang akan menghasilkan tampilan pada browser
+
+---
+
+class: section-cover, middle, bg-green
+
+## Element yang ada di dalam `<body>` antara lain:   
+--
+
+- # Heading
+--
+
+- # Gambar & Teks
+--
+
+- # Form
+--
+
+- # Table
+--
+
+- # Layout
+--
+
+- # Lainnya
+--
+
+---
+
+
+class: section-cover, middle, bg-dark-green
+
+# Heading
+--
+
+- # `<h1>`
+--
+
+- # `<h2>`
+--
+
+- # `<h3>`
+--
+
+- # `<h4>`
+--
+
+- # `<h5>`
+--
+
+- # `<h6>`
+
+
+---
+
+class: section-cover, middle, bg-dark-green
+
+# Gambar dan Teks
+--
+
+- # `<img>`
+--
+
+- # `<p>` dan `<span>`
+--
+
+- # `<a>`
+--
+
+- # `<strong>`, `<b>`, `<i>` dan `<small>`
+--
+
+- # `<ul>` dan `<ol>`
+--
+
+- # `<dl>`
+--
+
+---
+
+class: section-cover, middle, center, bg-dark-green
+# `<img>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<p>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<span>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<a>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<strong>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<b>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<i>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<small>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<ul>` atau `<ol>`
+# dan `<li>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<dl>` dan `<dt>`
+---
+
+
+
+
+class: section-cover, middle, bg-dark-green
+
+# Form
+--
+
+- ## `<form>`
+--
+
+- ## `<fieldset>`
+--
+
+- ## `<input>`
+--
+
+- ## `<select>`, `<optgroup>` dan `<option>`
+--
+
+- ## `<textarea>`
+--
+
+- ## `<button>`
+--
+
+- ## `<label>` dan `<legend>`
+--
+
+---
+
+class: section-cover, middle, center, bg-dark-green
+# `<form>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<fieldset>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<input>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<select>`
+# `<optgroup>`
+# `<option>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<textarea>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<button>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<label>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<legend>`
+---
+
+
+
+class: section-cover, middle, bg-dark-green
+
+# Table
+--
+
+- ## `<table>`
+--
+
+- ## `<thead>` dan `<th>`
+--
+
+- ## `<tbody>`
+--
+
+- ## `<tr>`
+--
+
+- ## `<td>`
+--
+
+---
+
+class: section-cover, middle, center, bg-dark-green
+# `<table>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<thead>`
+# `<th>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<tbody>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<tr>`
+---
+class: section-cover, middle, center, bg-dark-green
+# `<td>`
+---
+
+
+
+class: section-cover, middle, bg-dark-green
+
+# Layout
+--
+
+- ## `<div>`
+--
+
+---
+
+class: section-cover, middle, center, bg-dark-green
+# `<div>`
+---
+
+
+
+class: section-cover, middle, bg-dark-green
+
+# Lainnya
+--
+
+- ## `<hr>` dan `<br>`
+--
+
+- ## `<script>`
+--
+
+- ## `<style>`
+--
+
+- ## `<marquee>`
+--
+
+---
+
+class: section-cover, middle, center, bg-dark-green
+# `<hr>` dan `<br>`
+---
+
+class: section-cover, middle, center, bg-dark-green
+# `<script>`
+---
+
+class: section-cover, middle, center, bg-dark-green
+# `<style>`
+---
+
+class: section-cover, middle, center, bg-dark-green
+# `<marquee>`
+---
+
+
+
+class: section-cover, middle, center, bg-dark-orange
+
+# HTML 4 vs HTML 5
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+### https://speakerdeck.com/mikemcquaid/html5
+
+---
+
+class: section-cover, middle, center, bg-dark-orange
+
+# Mari Mencoba
+
+---
+
+class: section-cover, middle, bg-dark-orange
+
+# Mari Mencoba
+--
+
+# 1. Gambar dan Teks
+--
+
+# 2. Form
+--
+
+# 3. Table
+--
+
+# 4. Layout Table
+--
+
+
+---
+
+class: section-cover, middle, bg-dark-dark
+
+# Tugas
+--
+
+# 1. Single Entri Blog
+--
+
+# 2. Form Kompleks (form+table)
+--
+
+# 3. Impossible Table
+
+---
+
+class: section-cover, middle, bg-dark-red
+
+# Ketentuan Tugas
+
+# Dilarang Menggunakan CSS
+
+---
+
+
+name: page-cover
+class: center, middle, cover
+
+.hd[
+    ![ongischool](img/ongischool-logo-wide-wc.png)
+]
+
+.ft[
+    ![frontendmalang](img/fdm-logo-wide-wc.png)
+    ![dilo](img/dilo-logo-default.png)
+]
+
+# Matur Suwun
+</textarea>
+    <script src="js/remark.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="js/remark.language.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark'
+        }) ;
+    </script>
+  </body>
+</html>
