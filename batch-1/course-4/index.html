@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Basic CSS Part 1</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta property="og:description" content="Ongis School Batch 1 Frontend Course - Course 1 - Pengenalan Frontend Development">
+    <meta property="og:image" content="http://malangfrontend.github.io/ongischool-frontend-course/batch-1/course-1/img/presentation-cover.png">
+  </head>
+  <body>
+    <textarea id="source">name: page-cover
+class: center, middle, cover
+
+.hd[
+    ![ongischool](img/ongischool-logo-wide-wc.png)
+]
+
+.ft[
+    ![frontendmalang](img/fdm-logo-wide-wc.png)
+    ![dilo](img/dilo-logo-default.png)
+]
+
+Ongis School Batch 1 Course 4 (FDMOS0104)
+
+# Basic CSS Part 2
+
+Malang Digital Lounge, 30 Mei 2016
+
+---
+
+name: page-template
+class: page, as-template
+
+.page-header[
+.left[
+    Ongis School Batch #1 - Course #04 : Basic CSS Part 2
+]
+.right[
+    FDM-OS-01-04
+].clearfix[]]
+
+.page-footer[
+.left[
+    ONGIS SCHOOL 2016
+]
+.right[
+    ![ongischool](img/ongischool-logo-wide-bc.png)
+    ![frontendmalang](img/fdm-logo-wide-bc.png)
+    ![dilo](img/dilo-logo-default.png)
+].clearfix[]]
+
+
+---
+
+class: page
+template: page-template
+
+# Agenda
+
+--
+
+1. Position
+--
+
+2. Pseudo Class & Pseudo Elements
+--
+
+3. Combinator
+--
+
+4. Attribute Selector
+--
+
+5. CSS3 Syntax
+--
+
+6. Tugas  
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# CSS Position
+
+---
+
+class: section-cover, middle, bg-dark
+
+## CSS Position Attribute List
+--
+
+- ## position
+--
+
+- ## overflow / overflow-x / overflow-y
+--
+
+- ## left / right / top / bottom
+--
+
+- ## z-index
+--
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# CSS Pseudo Class and Pseudo Elements
+
+---
+
+class: section-cover, middle, bg-dark
+
+## CSS Pseudo Classes List
+--
+
+- ## :active / :hover / :focus
+--
+
+- ## :first-child / :last-child
+--
+
+- ## :nth-child
+--
+
+- ## :not
+--
+
+---
+
+class: section-cover, middle, bg-dark
+
+## CSS Pseudo Elements List
+--
+
+- ## ::after
+--
+
+- ## ::before
+--
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Cara Penggunaan Pseudo Selector
+
+## `selector::[pseudo] {`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `color: red;`
+## `}`
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# CSS Combinators
+
+---
+
+class: section-cover, middle, bg-dark
+
+## CSS Combinators List
+--
+
+- ## Descendant Selector (space)
+--
+
+- ## Child Selector (>)
+--
+
+- ## Adjacent Sibling Selector (+)
+--
+
+- ## General Sibling Selector (~)
+--
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Descendant Selector
+--
+
+- ## Adalah selector untuk menunjuk seluruh elemen di bawah elemen parent nya, tidak peduli berapa tingkat atau kedalaman child nya
+--
+
+- ## Ditandai dengan tanda space atau spasi
+--
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Contoh Descendant Selector
+
+## `div p {`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `color: red;`
+## `}`
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Child Selector
+--
+
+- ## Adalah selector untuk menunjuk elemen hanya benar-benar berada di bawah elemen parent nya, tidak berlaku untuk elemen yang sama tapi di kedalaman atau yang lebih dalam
+--
+
+- ## Ditandai dengan tanda `>`
+--
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Contoh Child Selector
+
+## `div > p {`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `color: red;`
+## `}`
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Adjacent Sibling Selector
+--
+
+- ## Adalah selector untuk menunjuk elemen setelah elemen yang ditunjuk dan memiliki level yang sejajar, bukan child atau parent.
+--
+
+- ## Ditandai dengan tanda `+`
+--
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Contoh Adjacent Sibling Selector
+
+## `div + p {`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `color: red;`
+## `}`
+
+---
+
+class: section-cover, middle, bg-dark
+
+## General Sibling Selector
+--
+
+- ## Adalah selector untuk menunjuk seluruh elemen yang memiliki level yang sejajar, bukan child atau parent. mirip dengan adjacent sibling, namun berlaku untuk seluruh, bukan hanya setelahnya
+--
+
+- ## Ditandai dengan tanda `~`
+--
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Contoh General Sibling Selector
+
+## `div ~ p {`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `color: red;`
+## `}`
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# CSS Attribute Selector
+
+---
+
+class: section-cover, middle, bg-dark
+
+## CSS Attribute Selector
+--
+
+- ## Kita bisa memilih elemen spesifik dengan attribute spesifik pula. Misalnya kita bisa menunjuk elemen `input` yang hanya memiliki attribute `type=text` dsb
+--
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Contoh Attribute Selector
+
+## `selector[attribute='value'] {`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `color: red;`
+## `}`
+
+## `input[type='password'] {`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `color: red;`
+## `}`
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# CSS 3
+
+---
+
+class: section-cover, middle, bg-dark
+
+## CSS 3 Famous Modules
+--
+
+- ## Rounded Corners
+--
+
+- ## Gradient
+--
+
+- ## Shadow
+--
+
+- ## Transitions
+--
+
+---
+
+
+
+
+name: page-cover
+class: center, middle, cover
+
+.hd[
+    ![ongischool](img/ongischool-logo-wide-wc.png)
+]
+
+.ft[
+    ![frontendmalang](img/fdm-logo-wide-wc.png)
+    ![dilo](img/dilo-logo-default.png)
+]
+
+# Matur Suwun
+</textarea>
+    <script src="js/remark.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="js/remark.language.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark'
+        }) ;
+    </script>
+  </body>
+</html>

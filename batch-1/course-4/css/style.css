@@ -1,0 +1,307 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,400italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700,600);
+
+/* Global Rules */
+
+* {
+  color: #444;
+  font-family: "Source Sans Pro";
+}
+
+ol, ul {
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    margin-left: 24px;
+}
+
+ul {
+    margin-left: 24px;
+}
+
+ol li,
+ul li,
+p {
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #888;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.remark-code, .remark-inline-code { 
+    font-family: 'Source Code Pro'; 
+    font-weight: 400;
+}
+
+.remark-code .class,
+.remark-code .number {
+    color: white;
+}
+
+
+
+.left-column {
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 2em;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ p {
+  clear: both;
+}
+
+/* Color Definition */
+
+.bg-turqoise {
+  background: #1abc9c;
+}
+.bg-dark-turqoise {
+  background: #16a085;
+}
+
+.bg-green {
+  background: #2ecc71;
+}
+.bg-dark-green {
+  background: #27ae60
+}
+
+.bg-blue {
+  background: #3498db;
+}
+.bg-dark-blue {
+  background: #2980b9;
+}
+
+.bg-purple {
+  background: #9b59b6;
+}
+.bg-dark-purple {
+  background: #8e44ad;
+}
+
+.bg-dark {
+  background: #34495e;
+}
+.bg-dark-dark {
+  background: #2c3e50;
+}
+
+.bg-yellow {
+  background: #f1c40f;
+}
+.bg-dark-yellow {
+  background: #f39c12;
+}
+
+.bg-orange {
+  background: #e67e22;
+}
+.bg-dark-orange {
+  background: #d35400;
+}
+
+.bg-red {
+  background: #e74c3c;
+}
+.bg-dark-red {
+  background: #c0392b
+}
+
+.bg-white {
+  background: #ecf0f1;
+}
+.bg-dark-white {
+  background: #bdc3c7;
+}
+
+.bg-gray {
+  background: #95a5a6;
+}
+.bg-dark-gray {
+  background: #7f8c8d;
+}
+
+/* Cover Rules */
+
+.cover {
+    background: black;
+    background-size: cover !important;    
+    background: 
+      linear-gradient( 
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7) 
+      ), 
+      url(../img/cover.jpg);
+}
+
+.cover h1 {
+    color: white;
+    font-weight: 600;
+}
+
+.cover .hd {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.cover .hd img {
+  width: 200px;
+  margin: 0px 10px;
+}
+
+.cover .ft {
+  position: absolute;
+  bottom: 60px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.cover .ft img {
+  height: 50px;
+  margin: 0px 10px;
+}
+
+.cover .ft:before {
+  content: "Supported By";
+  font-family: "Roboto";
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Page Rules */
+
+.page h1 {
+  color: #E14242;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 50px 0px;
+  margin-bottom: 20px;
+}
+
+.page {
+  padding: 30px !important;
+}
+
+.page img {
+  /*margin-top: 100px;*/
+}
+.default-img img {
+  width: 100%;
+}
+
+
+/* Section Cover */
+
+.section-cover * {
+  color: white;
+}
+
+.section-cover h1 { font-size: 48px; }
+.section-cover h2 { font-size: 36px; }
+.section-cover h3 { font-size: 24px; }
+.section-cover h4 { font-size: 18px; }
+.section-cover h5 { font-size: 14px; }
+.section-cover h6 { font-size: 12px; }
+
+.section-cover.code {
+  font-family: "Source Code Pro"
+} 
+
+.section-cover pre {
+  font-size: 18px;
+}
+
+
+/* Template Rules */
+
+.page-header {
+  font-family: "Source Sans Pro";
+  background: #e67e22;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+}
+
+.page-header img {
+  height: 30px;
+}
+
+.page-header .left {
+  color: white;
+  padding: 20px 30px;
+  float: left;
+  font-weight: 200;
+  /*background: darkorange;*/
+}
+.page-header .right {
+  color: white;
+  padding: 20px 30px;
+  float: right;
+  font-weight: 200;
+  background: #ec5e00;
+}
+
+.page-footer {
+  background: #ddd;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+}
+
+.page-footer img {
+  height: 30px;
+  margin-left: 10px;
+}
+
+.page-footer .left {
+  color: #444;
+  padding: 10px 30px;
+  float: left;
+  font-weight: 400;
+  padding-top: 18px;
+}
+.page-footer .right {
+  color: #444;
+  padding: 10px 30px;
+  float: right;
+  font-weight: 400;
+}
+
+

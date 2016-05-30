@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Basic CSS Part 1</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta property="og:description" content="Ongis School Batch 1 Frontend Course - Course 1 - Pengenalan Frontend Development">
+    <meta property="og:image" content="http://malangfrontend.github.io/ongischool-frontend-course/batch-1/course-1/img/presentation-cover.png">
+  </head>
+  <body>
+    <textarea id="source">name: page-cover
+class: center, middle, cover
+
+.hd[
+    ![ongischool](img/ongischool-logo-wide-wc.png)
+]
+
+.ft[
+    ![frontendmalang](img/fdm-logo-wide-wc.png)
+    ![dilo](img/dilo-logo-default.png)
+]
+
+Ongis School Batch 1 Course 3 (FDMOS0103)
+
+# Basic CSS
+
+Malang Digital Lounge, 16 Mei 2016
+
+---
+
+name: page-template
+class: page, as-template
+
+.page-header[
+.left[
+    Ongis School Batch #1 - Course #03 : Basic CSS Part 1
+]
+.right[
+    FDM-OS-01-03
+].clearfix[]]
+
+.page-footer[
+.left[
+    ONGIS SCHOOL 2016
+]
+.right[
+    ![ongischool](img/ongischool-logo-wide-bc.png)
+    ![frontendmalang](img/fdm-logo-wide-bc.png)
+    ![dilo](img/dilo-logo-default.png)
+].clearfix[]]
+
+
+---
+
+class: page
+template: page-template
+
+# Agenda
+
+--
+
+1. Pembagian Kelompok
+--
+
+2. Presentasi Tugas Sebelumnya
+--
+
+3. Apa Itu CSS?
+--
+
+4. Mengapa Menggunakan CSS?
+--
+
+5. Jenis dan Cara Menggunakan CSS
+--
+
+5. Struktur Dasar Penulisan Sintaks CSS
+--
+
+6. Beda ID dan Class
+--
+
+7. Daftar Property CSS
+--
+
+7. Tugas  
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# Pembagian Kelompok
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Pembagian Kelompok
+--
+
+- # Mencari anggota tim kelompok masing masing 2 orang
+--
+
+- # Memberi nama masing masing tim (unik)
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# Presentasi Tugas
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# Apa itu CSS ?
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Kepanjangan CSS Adalah
+# Cascading Style Sheet
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## CSS Adalah
+# Bahasa markup untuk memberikan __style__ atau gaya terhadap elemen HTML sebagai penyusun utama struktur website
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## CSS Adalah
+# Untuk mempercantik halaman website dengan memodifikasi atau merekayasa tag dan/atau elemen HTML
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# Mengapa Menggunakan CSS ?
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## #1
+# Dapat merekayasa dan mengubah tampilan HTML
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## #2
+# Dapat digunakan berulang kali pada halaman HTML yang berbeda 
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# Cara menjalankan CSS (DIY)
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Jenis CSS
+--
+
+- # Eksternal
+--
+
+- # Internal
+--
+
+- # Inline
+--
+
+- # Inline (Property HTML) - Bukan CSS 
+--
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Jenis CSS - Eksternal
+# Adalah cara menggunakan css dengan menggunakan file terpisah. Umumnya berekstensi .css dan di load pada halaman `<head>` HTML
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Jenis CSS - Eksternal
+### `<link rel="stylesheet" href="/path/menuju/style.css" />`
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Jenis CSS - Eksternal
+
+- ## Kelebihan dari CSS eksternal adalah bisa di load dan dipakai pada halaman html manapun selama halaman html itu mereferensikan file css tersebut pada head. Apabila ada perubahan tinggal mengganti pada 1 file css saja dan lebih tersentral.
+--
+
+- ## Kekurangan dari CSS eksternal adalah kadang2 lambat
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Jenis CSS - Internal
+# Adalah cara menggunakan css langsung di dalam file html itu sendiri. Umumnya diletakkan di `<head>` dan di apit dengan tag `<style>..</style>`
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Jenis CSS - Internal
+
+- ## Kelebihan dari CSS Internal adalah lebih cepat daripada CSS Eksternal
+--
+
+- ## Kekurangan dari CSS Internal adalah kita harus menuliskan ulang style kita di tiap halaman HTML, apabila ada perubahan maka kita harus merubah masing masing file.
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Jenis CSS - Inline
+# Adalah cara menggunakan css langsung pada tag HTML tersebut dengan memberikan property `style` pada tag html itu.
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Jenis CSS - Inline
+## `<div style="property1: value1; property2: value2">`
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Jenis CSS - Inline
+
+- ## Kelebihan dari CSS Inline adalah lebih cepat daripada CSS Internal
+--
+
+- ## Kekurangan dari CSS inline adalah kita harus menuliskan ulang style kita di tiap tag HTML, apabila ada perubahan maka kita harus merubah masing masing tag (lebih manual dan berdarah2 daripada internal)
+
+---
+
+class: section-cover, middle, bg-dark
+
+## FYI
+
+# (file) HTML akan membaca style mulai dari inline -> internal -> eksternal;
+
+---
+
+class: section-cover, middle, bg-dark
+
+## FYI
+
+# Inline bawaan property HTML bukan merupakan CSS, hanya merupakan bagian dari HTML dan bersifat terbatas. misalnya BGCOLOR, COLOR, CELLPADDING, BORDER, dll.
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# Struktur Dasar CSS
+
+---
+
+class: section-cover, middle, bg-dark
+
+## `selector-1,`
+## `selector-2,`
+## `selector-3 sub-selector-3 {`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `property-1: value-1;`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `property-2: value-2;`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `..dst`
+## `}`
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Selector dan Sub Selector
+# Adalah penyebutan dari tag HTML itu sendiri.
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Selector dan Sub Selector
+# Misalnya `p`, `h1`, `table`, dll
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Selector dan Sub Selector
+# selector bisa digunakan secara multiple pada satu sintaks css dengan diberi separator comma. misalnya `p, h1, table`
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Contoh penggunaan selector html
+
+## `<h1>Hello Ongischool</h1>`
+
+## `h1 {`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `deklarasi-style-disini;`
+## `}`
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Selector dan Sub Selector
+# Selain tag HTML, selector dapat juga digunakan untuk memanggil/mencari/menyebut `class` atau `id` dari tag html tersebut
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Selector dan Sub Selector
+# Untuk memanggil `class` pada css dapat digunakan `.nama-class`
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Contoh penggunaan selector class html
+
+### `<h1 class="judul">Hello Ongischool</h1>`
+
+## `.judul {`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `deklarasi-h1-disini;`
+## `}`
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Selector dan Sub Selector
+# Untuk memanggil `id` pada css dapat digunakan `#nama-id`
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Contoh penggunaan selector class html
+
+### `<div id="header">ini header</h1>`
+
+## `#header {`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `deklarasi-header-disini;`
+## `}`
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Selector dan Sub Selector
+# berhubungan erat dengan DOM (Document Object Model) atau hierarki dari struktur HTML mulai dari luar sampai dalam.
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Selector dan Sub Selector
+# Contohnya untuk memanggil atau menyebut sebuah tag `<li>` di dalam `<li>` bisa dengan menuliskan 
+# `ul li { deklarasi }`
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Property
+# Property adalah jenis style / apa yang mau kita ubah, misalnya ukuran, warna, background, lebar, tinggi, dll
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Contoh penggunaan property
+
+## `h1`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `color: color-value;`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `font-size: font-size-value;`
+## `}`
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Value
+# Sedangkan value adalah nilai dari property, misalnya berapa tingginya, apa warna nya, dll
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Contoh penggunaan value
+
+## `h1`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `color: red;`
+##      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `font-size: 20px;`
+## `}`
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# Apa beda ID dan Class?
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## ID adalah
+# Biasanya merepresentasikan sebuah tag HTML atau section yang biasanya hanya ada 1 / identik di tiap halaman. misalnya header, footer, content, atau sidebar
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+## Class adalah
+# Biasanya merepresentasikan sebuah tag HTML atau style yang biasanya dipakai berulang, misalnya style dari link, style dari table, style dari paragraf
+
+---
+
+class: section-cover, middle, center, bg-dark
+
+# Meskipun pada CSS tidak strict, namun diharapkan dibiasakan dalam mematuhi aturan ini karena pada saat berhubungan dengan javascript nanti tag dengan ID yang sama tidak akan berjalan.
+
+---
+
+class: section-cover, middle, center, bg-red
+
+## Apa saja yang bisa diubah dari HTML dengan menggunakan CSS?
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Daftar Property CSS
+--
+
+- ### color
+--
+
+- ### background
+--
+
+- ### font and type
+--
+
+- ### spacing, margin and padding
+--
+
+- ### height and width
+--
+
+- ### border
+--
+
+- ### position
+--
+
+
+---
+
+class: section-cover, middle, center, bg-red
+
+## Apa saja yang bisa TIDAK bisa diubah dari HTML dengan menggunakan CSS?
+
+---
+
+class: section-cover, middle, bg-dark
+
+## Daftar hal yang tidak bisa diubah dengan CSS
+--
+
+- ### content
+--
+
+- ### markup
+--
+
+---
+
+class: section-cover, middle, center, bg-red
+
+# MARI KITA COBA ;))
+
+---
+
+class: section-cover, middle, bg-dark-dark
+
+# Tugas
+--
+
+# 1. Memberikan Style untuk tugas form
+--
+
+# 2. Membuat file baru berisi Table HTML (nama dan jumlah field serta jumlah row terserah) dan di styling dengan css juga
+--
+
+---
+
+class: section-cover, middle, bg-dark-red
+
+# Ketentuan Tugas
+# Menggunakan CSS Eksternal
+
+---
+
+name: page-cover
+class: center, middle, cover
+
+.hd[
+    ![ongischool](img/ongischool-logo-wide-wc.png)
+]
+
+.ft[
+    ![frontendmalang](img/fdm-logo-wide-wc.png)
+    ![dilo](img/dilo-logo-default.png)
+]
+
+# Matur Suwun
+</textarea>
+    <script src="js/remark.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="js/remark.language.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark'
+        }) ;
+    </script>
+  </body>
+</html>
