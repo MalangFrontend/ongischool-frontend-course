@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Pengenalan CSS Prepocessors</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta property="og:description" content="CSS methodologies are formal, documented systems for authoring CSS in a way that allows us to develop, maintain and scale the front-end as a set of small, isolated modules">
+    <meta property="og:image" content="http://slide.yuripertamax.me/introduction-to-css-methodologies/dist/img/cover.png">
+  </head>
+  <body>
+    <textarea id="source">name: page-cover
+class: center, middle, cover
+
+.hd[
+    ![ongischool](img/ongischool-logo-wide-wc.png)
+]
+
+.ft[
+    ![frontendmalang](img/fdm-logo-wide-wc.png)
+    ![dilo](img/dilo-logo-default.png)
+]
+
+Ongis School Batch 1 Course 5 (FDMOS0105)
+
+# Pengenalan Javascript dan jQuery
+
+<!-- by Frontend Developer Malang User Group -->
+
+Malang Digital Lounge, 15 April 2016
+
+---
+
+name: page-template
+class: page, as-template
+
+.page-header[
+.left[
+    Ongis School Batch #1 - Course #05 : Pengenalan Javascript dan jQuery
+]
+.right[
+    FDM-OS-01-05
+].clearfix[]]
+
+.page-footer[
+.left[
+    ONGIS SCHOOL 2016
+]
+.right[
+    ![ongischool](img/ongischool-logo-wide-bc.png)
+    ![frontendmalang](img/fdm-logo-wide-bc.png)
+    ![dilo](img/dilo-logo-default.png)
+].clearfix[]]
+
+
+---
+
+class: page
+template: page-template
+
+# Agenda
+
+--
+
+1. Apa itu Javascript?
+--
+
+2. Fungsi-fungsi dasar Javascript
+--
+
+3. Pengenalan jQuery
+--
+
+4. Keunggulan dan Kekurangan jQuery
+--
+
+5. Vanilla JS vs jQuery
+--
+
+6. Kategori API jQuery
+
+---
+
+class: section-cover, middle, center, bg-green
+
+# Apa itu Javascript?
+
+---
+
+class: section-cover, middle, center, bg-dark-green
+
+## Javascript adalah
+
+--
+
+# Bahasa pemrograman client side
+
+---
+
+class: section-cover, middle, center, bg-dark-green
+
+## Javascript
+
+--
+
+# Bisa dipanggil oleh HTML / dituliskan di dalam HTML
+
+---
+
+class: section-cover, middle, bg-dark-green
+
+## External Javascript
+
+--
+
+```
+<head>
+
+    <script src="path/to/file.js"></script>
+
+</head>
+```
+
+---
+
+class: section-cover, middle, bg-dark-green
+
+## Internal Javascript
+
+--
+
+```
+<script>
+
+// javascript code here
+
+</script>
+```
+
+---
+
+class: section-cover, middle, center, bg-green
+
+# Contoh syntax javascript
+
+---
+
+class: section-cover, middle, bg-dark-green
+
+## Menampilkan Pop-Up
+
+--
+
+```
+<script>
+
+    alert('hello world')
+
+</script>
+```
+
+---
+
+class: section-cover, middle, bg-dark-green
+
+## Variabel
+
+--
+
+```
+<script>
+
+    var foo = 'bar';
+
+    alert(foo);
+    
+</script>
+```
+
+---
+
+class: section-cover, middle, bg-dark-green
+
+## Matematika
+
+--
+
+```
+<script>
+
+    var foo = 3 + 2;
+    
+    alert("2 + 2 = " + foo);
+    
+</script>
+```
+
+---
+
+class: section-cover, middle, bg-dark-green
+
+## ...dan banyak lagi seperti bahasa pemrograman pada umumnya
+
+---
+
+
+---
+
+
+class: page
+template: page-template
+
+# Embedding Source Code
+
+```
+.border-radius {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+```
+
+---
+
+class: page, center
+template: page-template
+
+# Embedding Image
+
+.center.middle.default-img[
+    ![frontendmalang](img/fdm-logo-wide.png)
+    <!-- ![dilo](img/dilo-logo-default.png) -->
+]
+
+---
+
+name: page-cover
+class: center, middle, cover
+
+.hd[
+    ![ongischool](img/ongischool-logo-wide-wc.png)
+]
+
+.ft[
+    ![frontendmalang](img/fdm-logo-wide-wc.png)
+    ![dilo](img/dilo-logo-default.png)
+]
+
+# Rutam Nuwus
+</textarea>
+    <script src="js/remark.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="js/remark.language.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark'
+        }) ;
+    </script>
+  </body>
+</html>
